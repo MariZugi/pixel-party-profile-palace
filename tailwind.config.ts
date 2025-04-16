@@ -68,6 +68,8 @@ export default {
 					lime: '#95CA54',
 					teal: '#76C394',
 					pink: '#BF3B84',
+					black: '#000000',
+					darkPurple: '#1A0F2B',
 				}
 			},
 			borderRadius: {
