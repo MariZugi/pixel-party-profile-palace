@@ -61,6 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Y2K color palette
+				y2k: {
+					purple: '#8163BF',
+					lime: '#95CA54',
+					teal: '#76C394',
+					pink: '#BF3B84',
 				}
 			},
 			borderRadius: {
@@ -84,11 +91,46 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'sparkle': {
+					'0%, 100%': { 
+						opacity: '0', 
+						transform: 'scale(0.8)'
+					},
+					'50%': {
+						opacity: '1',
+						transform: 'scale(1.2)'
+					}
+				},
+				'blink': {
+					'0%, 49%, 100%': {
+						opacity: '1'
+					},
+					'50%, 99%': {
+						opacity: '0'
+					}
+				},
+				'marquee': {
+					'0%': {
+						transform: 'translateX(100%)'
+					},
+					'100%': {
+						transform: 'translateX(-100%)'
+					}
+				},
+				'rainbow': {
+					'100%': {
+						backgroundPosition: '100vw 0'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'sparkle': 'sparkle 1.5s infinite',
+				'blink': 'blink 1s infinite',
+				'marquee': 'marquee 15s linear infinite',
+				'rainbow': 'rainbow 8s linear infinite'
 			}
 		}
 	},
