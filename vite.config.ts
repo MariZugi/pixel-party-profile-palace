@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
+  base: '/pixel-party-profile-palace/', // 👈 Añade esta línea
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
