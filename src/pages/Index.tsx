@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Music, Play, Youtube, MessageSquare, Users, Image, BookText, Mail, User, Heart, Star } from "lucide-react";
 import { SparkleText, BlinkText, RainbowText, MarqueeText, GlitterButton, BouncingText } from "../components/Y2KAnimations";
@@ -13,8 +12,10 @@ const Index = () => {
   ]);
   const [commentText, setCommentText] = useState("");
 
-  const handleAddComment = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleAddComment = (e?: React.FormEvent) => {
+    if (e) {
+      e.preventDefault();
+    }
     if (commentText.trim()) {
       setComments([
         { name: "NewVisitor", message: commentText, timestamp: "Just now" },
