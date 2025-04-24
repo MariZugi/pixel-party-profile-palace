@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export const Cursor = () => (
@@ -11,7 +12,7 @@ export const Cursor = () => (
 export const PixelHeart = () => (
   <div className="inline-block animate-sparkle">
     <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-      <path fill="#BF3B84" d="M5 2H3v2H1v2h2v2h2V6h2V4H5V2zm10 2h-6v2h2v2h-2v2h2v-2h2v-2h2V6h-2V4z"/>
+      <path fill="#BF3B84" d="M5 2H3v2H1v2h2v2h2V6h2V4H5V2zm10 2h-6v2h2v2h2v2h-2v2h-2v2h2v-2h2v-2h2v-2h2V6h-2V4z"/>
     </svg>
   </div>
 );
@@ -106,7 +107,7 @@ export const GlitterOverlay = () => (
   </div>
 );
 
-export const DarkGlowButton = ({ children, onClick }: { children: React.ReactNode, onClick?: (e?: React.FormEvent) => void }) => (
+export const DarkGlowButton = ({ children, onClick }: { children: React.ReactNode, onClick?: () => void }) => (
   <button
     onClick={onClick}
     className="relative overflow-hidden bg-gray-900 text-y2k-pink hover:bg-black px-4 py-2 rounded-lg font-bold transition-all transform hover:scale-105"
@@ -152,3 +153,4 @@ export const EmoBox = ({ children }: { children: React.ReactNode }) => (
     <GlitterOverlay />
   </div>
 );
+
